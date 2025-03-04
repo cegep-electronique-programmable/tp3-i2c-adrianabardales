@@ -50,9 +50,12 @@
 void SYSTEM_Initialize(void)
 {
 
+    INTERRUPT_Initialize();
+    I2C_Initialize();
     PIN_MANAGER_Initialize();
     OSCILLATOR_Initialize();
-    EUSART1_Initialize();
+    CCP2_Initialize();
+    TMR1_Initialize();
 }
 
 void OSCILLATOR_Initialize(void)
